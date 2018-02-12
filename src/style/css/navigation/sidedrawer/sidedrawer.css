@@ -1,0 +1,40 @@
+.side-drawer {
+    position: fixed;
+    width: 190px;
+    max-width: 100%;
+    font-size: 16px;
+    margin-bottom: 14px;
+    font-weight: 100; 
+    left: 0;
+    top: 0;
+    z-index: 200;
+    background-color: white;
+    padding: 32px 16px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-out;
+    text-align: center;
+}
+
+@media (min-width: 500px) {
+    .side-drawer {
+        display: none;
+    }
+}
+
+.open {
+    transform: translateX(0);
+}
+
+.close {
+    transform: translateX(-100%);
+}
+.side-drawer nav {
+    position: relative;
+    right: 23px;
+    bottom: 42px;
+}
+
+.side-drawer .logo {
+    bottom: 16px;
+    position: relative;
+}

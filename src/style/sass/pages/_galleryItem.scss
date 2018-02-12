@@ -1,0 +1,90 @@
+@import '../utils/variables.scss';
+
+/*
+ * GalleryItem styles
+ * ========================================================================== */
+
+ .btn {
+   border: 2px solid transparent;
+   border-radius: 20px;
+   padding: 3px 20px;
+ }
+
+ .btn-primary {
+   background-color: transparent;
+   color: transparent;
+   &:hover, &:focus, &:active, &.liked {
+     background-color:transparent;
+     border-color: transparent;
+     color: transparent;
+   }
+ }
+ .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+ }
+ .fas.fa-heart {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-size: 1.3em;
+    &:hover, &:focus, &:active, &.liked {
+      color: $red;
+    }
+ }
+ .blueimp-gallery {
+    background: white;
+    background: rgba(225,225,0225,.99);
+    a:not([href]):not([tabindex]) {
+      color:white;
+    }
+ }
+ .blueimp-gallery>.close, .blueimp-gallery>.title {
+    font-size: 37px;
+ }
+
+
+ .thumbnail {
+   border-radius: 8px;
+   padding: 12.5px;
+
+   .image-preview {
+      display: inline-block;
+      position: relative;
+      margin: 0 auto;
+      img {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+      }
+      .overlay {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: black;
+         opacity: 0.7;
+         cursor: pointer;
+      }
+      .glyphicon-zoom-in {
+        font-size: 40px;
+        color: white;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+   .caption {
+     padding: 0;
+     text-transform: none;
+     h6 {
+       color: $grey-light;
+     }
+     .counts {
+      display: inline-block;
+      padding-left: 20px;
+     }
+   }
+ }

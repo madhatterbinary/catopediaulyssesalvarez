@@ -1,0 +1,37 @@
+@import './sass/base/_app';
+@import './sass/base/_reset';
+@import './sass/base/_typography';
+
+@import './sass/components/_buttons';
+@import './sass/components/_carousel';
+@import './sass/components/_cover';
+@import './sass/components/_dropdown';
+
+@import './sass/layouts/_footer';
+@import './sass/layouts/_forms';
+@import './sass/layouts/_grid';
+@import './sass/layouts/_header';
+@import './sass/layouts/_navigation';
+@import './sass/layouts/_sidebar';
+@import './css/layout';
+
+@import './sass/pages/_contact';
+@import './sass/pages/_home.scss';
+@import './sass/pages/_galleryItem';
+@import './sass/pages/_gallery';
+
+@import './sass/themes/_admin';
+@import './sass/themes/_theme';
+
+@import './sass/utils/_functions';
+@import './sass/utils/_helpers';
+@import './sass/utils/_mixins';
+@import './sass/utils/_variables';
+
+@import './sass/vendors/_bootstrap';
+@import './sass/vendors/_jquery-ui';
+
+
+body {
+	background-color: lightblue;
+}
